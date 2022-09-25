@@ -1,0 +1,44 @@
+
+.container {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-areas: 
+    "head head head"
+    "side1 main side2"
+    "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 46px auto;
+    
+    background-color: black;
+}
+
+.header {
+    grid-area: head;
+    background-color: aquamarine;
+    position: sticky;
+    top: 0;
+}
+
+.side1 {
+    grid-area: side1;
+    background-color: gray;
+
+}
+
+.side2 {
+    grid-area: side2;
+    background-color: gray;
+
+}
+
+.main {
+    grid-area: main;
+    background-color: red;
+    height: 1000px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: blueviolet;
+}
